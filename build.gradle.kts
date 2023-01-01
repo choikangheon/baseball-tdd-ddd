@@ -21,8 +21,9 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation ("org.mockito:mockito-core:3.3.3")
+	testImplementation("org.jetbrains.kotlin", "kotlin-test-junit5", "1.3.72")
 }
 
 tasks.withType<KotlinCompile> {
