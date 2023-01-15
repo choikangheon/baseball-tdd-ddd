@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Assertions.*
 
 internal class BaseballServiceTest {
 
+
     @Test
     fun `야구게임 서비스 테스트`() {
         //given

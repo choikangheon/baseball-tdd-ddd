@@ -23,6 +23,7 @@ class GameController(val service: BaseballService) {
         return service.play(roomId, playGameDTO.answer)
     }
 
+
     @PostMapping("/{roomId}/history")
     fun playGame(@PathVariable roomId: Long): MutableList<GameHistory> {
         return service.getHistory(roomId)

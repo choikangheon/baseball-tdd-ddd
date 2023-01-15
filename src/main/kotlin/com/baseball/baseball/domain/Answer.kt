@@ -15,6 +15,7 @@ class Answer {
                 strike++
             }
         }
+
         return strike
     }
 

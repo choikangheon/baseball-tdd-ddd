@@ -21,6 +21,7 @@ class AnswerTest {
         assertThat(createAnswer2).isGreaterThan(1)
     }
 
+
     @Test
     fun `정답에 스트라이크를 계산한다`() {
         assertThat(createAnswer.countStrike("123")).isEqualTo(3)

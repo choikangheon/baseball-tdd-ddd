@@ -39,6 +39,7 @@ class Game(var answer: Answer = Answer()) {
     private fun updateSuccess(flag: Boolean) {
         this.success = flag
     }
+
 }
 
 data class GameResult(val strike: Int, val ball: Int, val out: Int)

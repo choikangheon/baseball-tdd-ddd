@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions.*
 
 internal class RoomRepositoryTest {
 
-    @Test
+    @Test 
     fun `현재 생성된 룸의 개수를 갖고온다`() {
         //given
         val repository = RoomRepository()

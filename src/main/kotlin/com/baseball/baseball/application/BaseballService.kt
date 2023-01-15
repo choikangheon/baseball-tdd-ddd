@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service
 class BaseballService {
     val repository = RoomRepository()
 
+
     fun createRoom(): Long {
         val room = Room(repository.count() + 1)
         return repository.save(room)

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions.*
 
 internal class GameTest {
     val game = Game()
+
     @Test
     fun `게임 시작 테스트`() {
         val play1 = game.play("123");
