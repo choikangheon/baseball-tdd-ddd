@@ -19,17 +19,17 @@ class GameController(val service: BaseballService) {
     }
 
     @PostMapping("/{roomId}/answer")
-    fun playGame(@PathVariable roomId:Long, @RequestBody playGameDTO :PlayGameDTO): ResponseDTO {
-    return service.play(roomId,playGameDTO.answer)
+    fun playGame(@PathVariable roomId: Long, @RequestBody playGameDTO: PlayGameDTO): ResponseDTO {
+        return service.play(roomId, playGameDTO.answer)
     }
 
     @PostMapping("/{roomId}/history")
-    fun playGame(@PathVariable roomId:Long): MutableList<GameHistory> {
-     return service.getHistory(roomId)
+    fun playGame(@PathVariable roomId: Long): MutableList<GameHistory> {
+        return service.getHistory(roomId)
     }
 
     @GetMapping("/{roomId}")
-    fun getGameResult(@PathVariable roomId:Long): GameResultDTO {
-    return service.getResult(roomId)
+    fun getGameResult(@PathVariable roomId: Long): GameResultDTO {
+        return service.getResult(roomId)
     }
 }

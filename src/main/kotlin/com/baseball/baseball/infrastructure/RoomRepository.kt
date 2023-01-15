@@ -11,14 +11,14 @@ class RoomRepository {
 
     fun count() = rooms.size.toLong()
 
-    fun save(room: Room) : Long{
+    fun save(room: Room): Long {
         rooms.add(room)
         return count()
     }
 
-    fun findByRoomId(roomId:Long): Room {
+    fun findByRoomId(roomId: Long): Room {
         return rooms
-                .filter{r-> r.roomId == roomId}
+                .filter { r -> r.roomId == roomId }
                 .first()
     }
 }

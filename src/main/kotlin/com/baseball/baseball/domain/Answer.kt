@@ -5,8 +5,7 @@ class Answer {
 
     init {
         val secureRandom = SecureRandom()
-
-       value = String.format("%03d",secureRandom.nextInt(999))
+        value = String.format("%03d", secureRandom.nextInt(999))
     }
 
     fun countStrike(reqAnswer: String): Int {

@@ -7,8 +7,9 @@ class Game(var answer: Answer = Answer()) {
     /*
     * 부생성자를 통해서  init 삭제해야함
     * */
-    var success : Boolean
+    var success: Boolean
     var chance: Int
+
     init {
         this.success = false
         this.answer = answer
@@ -24,18 +25,18 @@ class Game(var answer: Answer = Answer()) {
         val countStrike = answer.countStrike(reqAnswer)
         val countBall = answer.countBall(reqAnswer)
 
-        if(countStrike==3){
+        if (countStrike == 3) {
             updateSuccess(true)
         }
 
         return GameResult(countStrike, countBall, 3 - countStrike - countBall)
     }
 
-    private fun decreaseChance(){
+    private fun decreaseChance() {
         this.chance--
     }
 
-    private fun updateSuccess(flag : Boolean){
+    private fun updateSuccess(flag: Boolean) {
         this.success = flag
     }
 }
